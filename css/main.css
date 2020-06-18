@@ -1272,7 +1272,7 @@ html[dir=ltr] .user-settings .mo-user-icon {
   margin-left: 20px;
   margin-right: 0;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1700px) {
   html[dir=ltr] .user-settings .mo-user-icon {
     margin-left: 35px;
   }
@@ -1287,6 +1287,14 @@ html[dir=ltr] .user-settings .mo-user-icon {
 }
 html[dir=ltr] .user-settings .mo-user-icon.mo-menu-icon {
   margin: 0;
+}
+html[dir=ltr] .user-settings .mo-log-icon {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .user-settings .mo-log-icon {
+    margin-left: 20px;
+  }
 }
 
 .mo-menu-icon {
