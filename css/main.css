@@ -305,6 +305,7 @@ nav {
   box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.102);
   position: relative;
   z-index: 2;
+  text-transform: capitalize;
 }
 
 .mo-navbar {
@@ -546,6 +547,7 @@ nav {
 .cats-slider {
   margin-top: 70px;
   margin-bottom: 35px;
+  text-transform: capitalize;
 }
 @media (max-width: 992px) {
   .cats-slider {
@@ -644,6 +646,7 @@ nav {
   padding: 0 10px;
   height: 45px;
   display: flex;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .product .pro-name {
@@ -965,6 +968,7 @@ header {
 .hints {
   display: flex;
   align-items: center;
+  text-transform: capitalize;
 }
 @media (max-width: 767px) {
   .hints {
@@ -1011,6 +1015,7 @@ html[dir=ltr] .hint .hint-icon {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-right: 25px;
+  text-transform: capitalize;
 }
 html[dir=ltr] .lang {
   margin-left: 25px;
@@ -1022,6 +1027,7 @@ html[dir=ltr] .lang {
 
 .drop-cont {
   position: relative;
+  text-transform: capitalize;
 }
 .drop-cont:hover .top-anchor {
   color: #E6001C;
@@ -1263,8 +1269,13 @@ html[dir=ltr] .mo-log-icon .mo-log-anchor .mo-text:after {
   }
 }
 html[dir=ltr] .user-settings .mo-user-icon {
-  margin-left: 35px;
+  margin-left: 20px;
   margin-right: 0;
+}
+@media (min-width: 1500px) {
+  html[dir=ltr] .user-settings .mo-user-icon {
+    margin-left: 35px;
+  }
 }
 @media (max-width: 767px) {
   html[dir=ltr] .user-settings .mo-user-icon {
@@ -1313,6 +1324,7 @@ html[dir=ltr] .user-settings .mo-user-icon.mo-menu-icon {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
+  text-transform: capitalize;
 }
 @media (max-width: 992px) {
   .sec-head {
@@ -1350,6 +1362,7 @@ footer {
   padding-top: 45px;
   border-top: 5px solid #E6001C;
   margin-top: 105px;
+  text-transform: capitalize;
 }
 @media (max-width: 992px) {
   footer {
