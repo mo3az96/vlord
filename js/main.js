@@ -116,12 +116,33 @@ $(document).ready(function () {
         $(".sub-ul").unwrap();
     }
     if ($(window).width() <= 1199) {
+        $('.mo-menu-icon').click(function () {
+            $("nav").fadeIn(400);
+            $(".mo-overlay").fadeIn(400);
+            $(".mo-navbar").addClass("nav-in");
+            $("body").addClass("overflow");
+        });
+        $('.mo-overlay').click(function () {
+            $("nav").fadeOut(400);
+            $(".mo-overlay").fadeOut(400);
+            $(".mo-navbar").removeClass("nav-in");
+            $("body").removeClass("overflow");
+        });
+        $('.close-menu').click(function () {
+            $("nav").fadeOut(400);
+            $(".mo-overlay").fadeOut(400);
+            $(".mo-navbar").removeClass("nav-in");
+            $("body").removeClass("overflow");
+        });
+
         $('.lev-2').on('show.bs.collapse', function () {
             $(".lev-2").not(this).collapse('hide');
         });
         $('.lev-3').on('show.bs.collapse', function () {
             $(".lev-3").not(this).collapse('hide');
         });
+
+
     }
 
     if ($(window).width() <= 767) {
@@ -163,22 +184,6 @@ $(document).ready(function () {
         $(".mo-accordion").not(this).siblings('.nav-foot').css('padding-top', "0");
         $(".mo-accordion").not(this).siblings('.cats-display').css('padding-top', "0");
     })
-
-    // $('.mo-accordion1').click(function () {
-    //     var x = $(this).siblings().prop('scrollHeight') + 12 + "px";
-    //     $(".mo-accordion1").not(this).removeClass("active");
-    //     $(this).toggleClass("active");
-    //     if ($(this).siblings().css('max-height') == '0px') {
-    //         $(this).siblings().css('max-height', x);
-    //         $(this).siblings('.cat-display').css('padding-top', "10px");
-    //     } else {
-    //         $(this).siblings().css('max-height', '0');
-    //         $(this).siblings('.cat-display').css('padding-top', "0");
-    //     }
-
-    //     $(".mo-accordion1").not(this).siblings().css('max-height', '0');
-    //     $(".mo-accordion1").not(this).siblings('.cat-display').css('padding-top', "0");
-    // })
 });
 
 

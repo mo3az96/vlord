@@ -1521,11 +1521,11 @@ html[dir=ltr] nav .close-menu {
     box-shadow: none;
     position: fixed;
     z-index: 9;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0);
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    width: 280px;
+    display: none;
   }
   nav .close-menu {
     display: flex;
@@ -1544,6 +1544,7 @@ html[dir=ltr] nav .close-menu {
     overflow-y: auto;
     right: 0;
     transform-origin: right;
+    transform: scaleX(0);
     overflow-y: auto;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -1625,6 +1626,17 @@ html[dir=ltr] nav .close-menu {
   nav .sub-li {
     margin: 5px 0;
   }
+}
+
+.mo-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
