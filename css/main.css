@@ -1176,6 +1176,9 @@ html[dir=ltr] .drop-cont .top-anchor img {
     width: 177px;
   }
 }
+.logo.logo-xs {
+  display: none;
+}
 @media (max-width: 1199px) {
   .logo {
     display: none;
