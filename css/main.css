@@ -1163,7 +1163,8 @@ html[dir=ltr] .drop-cont .top-anchor img {
 }
 @media (max-width: 992px) {
   .header {
-    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 10px 0;
   }
 }
 
@@ -1175,9 +1176,14 @@ html[dir=ltr] .drop-cont .top-anchor img {
     width: 177px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .logo {
-    width: 100%;
+    display: none;
+  }
+  .logo.logo-xs {
+    display: block;
+    margin: auto;
+    width: 80px;
   }
 }
 
@@ -1310,25 +1316,30 @@ html[dir=ltr] .user-settings .mo-log-icon {
 }
 
 .mo-menu-icon {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   fill: #152636;
-}
-@media (max-width: 1199px) {
-  .mo-menu-icon {
-    display: flex;
-  }
 }
 
 .mo-search-icon {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   fill: #152636;
+  margin-right: 20px;
 }
-@media (max-width: 992px) {
-  .mo-search-icon {
+@media (max-width: 1199px) {
+  html[dir=ltr] .mo-search-icon {
+    margin-left: 20px;
+  }
+}
+
+.xs-settings {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .xs-settings {
     display: flex;
   }
 }

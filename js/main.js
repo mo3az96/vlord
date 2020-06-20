@@ -4,7 +4,7 @@ $(window).on('load', function () {
         $(this).remove();
     });
 });
-$(window).on("load", function () { });
+
 $(document).ready(function () {
 
     /////////Main Slider/////////
