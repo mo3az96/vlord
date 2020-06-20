@@ -1266,6 +1266,13 @@ html[dir=ltr] .mo-log-icon .mo-log-anchor .mo-text:after {
 @media (max-width: 767px) {
   .user-settings .mo-user-icon {
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  .user-settings .mo-user-icon.mo-fav-icon {
+    display: none;
   }
 }
 html[dir=ltr] .user-settings .mo-user-icon {
@@ -1318,12 +1325,6 @@ html[dir=ltr] .user-settings .mo-log-icon {
 @media (max-width: 992px) {
   .mo-search-icon {
     display: flex;
-  }
-}
-
-@media (max-width: 992px) {
-  .mo-fav-icon {
-    display: none;
   }
 }
 
