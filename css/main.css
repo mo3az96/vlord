@@ -1163,7 +1163,7 @@ html[dir=ltr] .drop-cont .top-anchor img {
 }
 @media (max-width: 992px) {
   .header {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr 3fr;
   }
 }
 
@@ -1173,6 +1173,11 @@ html[dir=ltr] .drop-cont .top-anchor img {
 @media (min-width: 1500px) {
   .logo {
     width: 177px;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    width: 100%;
   }
 }
 
