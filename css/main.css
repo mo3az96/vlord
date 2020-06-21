@@ -411,7 +411,7 @@ nav {
 }
 @media (max-width: 767px) {
   .main-slider .owl-dots {
-    bottom: 5px;
+    bottom: 15px;
   }
 }
 .main-slider .owl-nav button[class^=owl-] {
@@ -1536,10 +1536,24 @@ html[dir=ltr] .social-link:last-of-type {
   order: 1;
   margin-bottom: 17px;
 }
+.copytight img {
+  margin: 0 5px;
+}
+.copytight .tasawk {
+  margin: 0 4px;
+}
+@media (max-width: 1199px) {
+  .copytight .tasawk {
+    margin: 5px 0 0;
+  }
+}
 @media (max-width: 1199px) {
   .copytight {
-    order: 2;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    order: 2;
+    margin-bottom: 0;
     margin-top: 20px;
   }
 }
