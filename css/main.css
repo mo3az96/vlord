@@ -1668,6 +1668,7 @@ html[dir=ltr] nav .close-menu {
     border: none;
     box-shadow: none;
     padding: 5px 15px 0;
+    gap: unset;
   }
   nav .sub-cat .sub-name {
     font-weight: normal;
