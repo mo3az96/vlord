@@ -1672,6 +1672,7 @@ html[dir=ltr] nav .close-menu {
   }
   nav .sub-cat .sub-name {
     font-weight: normal;
+font-size:16px;
     margin: 5px 0;
     padding: 0;
     width: 100%;
