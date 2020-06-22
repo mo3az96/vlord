@@ -1678,6 +1678,7 @@ html[dir=ltr] nav .close-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 16px;
   }
   nav .sub-cat .sub-name:hover {
     color: #E6001C;
